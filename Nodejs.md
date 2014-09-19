@@ -44,4 +44,4 @@ Permet d'installer facilement des packages, framework pour NodeJs
 
 **Le javascript est mono threadé, un seul et unique coeur** 
 
-Code NON BLOQUANT axé sur des listeners
+Code NON BLOQUANT axé sur des listeners.
