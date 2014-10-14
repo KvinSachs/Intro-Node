@@ -38,3 +38,17 @@ bebeECSSDW = null; // Détruit l'objet
 * Date
 * Error
 * RegExp (pour tester les [regexp](http://regexr.com))
+
+JSON  
+
+```json
+var bebe = {
+    papa : "sdw",
+    maman : "ecs",
+    name: "k"
+};
+// Or
+var bebe = new Object();
+bebe.papa = "sdw";
+bebe.maman = ...
+```
