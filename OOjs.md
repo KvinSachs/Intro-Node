@@ -25,7 +25,7 @@ Javascript est un langage non typé (possibilité de switcher entre les types de
 Reference Type -> Reference Instance  
 Classe -> Objets  
 
-``` javascript
+```javascript
 var bebeECSSDW = new Person();
 bebeECSSDW = null; // Détruit l'objet
 ```
