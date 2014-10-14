@@ -1,0 +1,32 @@
+var papa = "Carlus";
+var pie = "3.1415626535 is pi";
+var combien = 8;
+var prix = combien * 13.7;
+var wesh = true;
+var nope = false;
+var vide = null;
+var supervide = null;
+var what;
+var what2 = undefined;
+
+// document.write("papa : " + papa + "<br/>");
+// document.write("pie : " + pie + "<br/>");
+// document.write("combien : " + combien + "<br/>");
+// document.write("prix : " + prix + "<br/>");
+// document.write("wesh : " + wesh + "<br/>");
+// document.write("nope : " + nope + "<br/>");
+// document.write("vide : " + vide + "<br/>");
+// document.write("supervide : " + supervide + "<br/>");
+// document.write("what : " + what + "<br/>");
+// document.write("what2 : " + what2 + "<br/>");
+
+console.log("type de papa : " + typeof papa);
+console.log("type de pie : " + typeof pie);
+console.log("type de combien : " + typeof combien);
+console.log("type de prix : " + typeof prix);
+console.log("type de wesh : " + typeof wesh);
+console.log("type de nope : " + typeof nope);
+console.log("type de vide : " + typeof vide);
+console.log(supervide === null);
+console.log("type de what : " + typeof what);
+console.log("type de what2 : " + typeof what2);
