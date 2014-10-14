@@ -29,3 +29,12 @@ Classe -> Objets
 var bebeECSSDW = new Person();
 bebeECSSDW = null; // Détruit l'objet
 ```
+
+#### Reference Type
+
+* Array
+* Object
+* Function
+* Date
+* Error
+* RegExp (pour tester les [regexp](http://regexr.com))
