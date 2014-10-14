@@ -39,9 +39,9 @@ bebeECSSDW = null; // Détruit l'objet
 * Error
 * RegExp (pour tester les [regexp](http://regexr.com))
 
-JSON  
+##### JSON  
 
-```json
+```javascript
 var bebe = {
     papa : "sdw",
     maman : "ecs",
@@ -51,4 +51,18 @@ var bebe = {
 var bebe = new Object();
 bebe.papa = "sdw";
 bebe.maman = ...
+```
+
+##### Regular Expressions
+
+```javascript
+var myRegex = new RegExp("\\d");
+var myRegex = /\d/g;
+```
+
+#### Getter and Setters
+
+```javascript
+obj.name;  // -> getter
+obj.name = ""; // -> setter
 ```
