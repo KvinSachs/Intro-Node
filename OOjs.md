@@ -27,4 +27,5 @@ Classe -> Objets
 
 ``` javascript
 var bebeECSSDW = new Person();
+bebeECSSDW = null; // Détruit l'objet
 ```
