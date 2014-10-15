@@ -45,3 +45,25 @@ Permet d'installer facilement des packages, framework pour NodeJs
 **Le javascript est mono threadé, un seul et unique coeur** 
 
 Code NON BLOQUANT axé sur des listeners.
+
+# NODEJS 
+
+* JS côté serveur
+* Monothreadé
+* Motor V8
+* Low Level
+* Real Time
+    * Socket
+    * Ad
+    * Pictionnary
+    * File Upload Client
+    * Chat
+    * Real Time App
+
+
+## API
+
+```javascript
+var server = require('http');
+server.createServer().listen();
+```

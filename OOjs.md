@@ -66,3 +66,22 @@ var myRegex = /\d/g;
 obj.name;  // -> getter
 obj.name = ""; // -> setter
 ```
+
+## Prototype
+
+Objet source sur lequel on va reproduire le schema.  
+Constructeur
+
+```javascript
+function Person(nom, prenom, age) {
+    this.name = nom;
+    this.surname = prenom;
+    this.age = age;
+
+    this.sayHello = function() {
+        console.log('Hello ' + this.name);
+    }
+}
+
+var bebe = new Person("DeLaBatte", "Hubert", "0.5");
+```
