@@ -126,3 +126,8 @@ objet1.Listeners(str); // Retourne tout les objets qui écoutent cet évènement
 objet1.emmit(str);
 objet1.setMaxListener(int); // Change le nombre de listener (10 par défaut)
 ```
+## Require à connaître
+
+* http
+* util
+* events

@@ -1,1 +1,0 @@
-console.log('Le module exampleTwo a été chargé');
