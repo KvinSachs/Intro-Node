@@ -84,3 +84,7 @@ Le fichier package.json permet de configurer le fichier de base (pour changer de
 ```javascript
 {"main" : "main.js"}
 ```
+
+Pour utiliser des modules, il faut creer un dossier *node_modules* et ensuite on peut utiliser `var example = require('exampleOne');` en utilisant soit index.js soit un autre nom et un package.json  
+
+Pour exporter des fonctions d'un module on utilise `module.export.fn = fn`
