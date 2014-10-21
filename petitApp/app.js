@@ -1,8 +1,11 @@
 var tableauReponse = require('tableauReponse');
 var util = require('util');
 
-var txt = util.format('My string is %s et %s', 'Youpidou', 'Ta mère');
-console.log(txt);
+// var txt = util.format('My string is %s et %s', 'Youpidou', 'Ta mère');
+// console.log(txt);
+
+var today = new Date();
+console.log(today.getYear());
 
 // console.dir(tableauReponse);
 // var stdin = process.openStdin();
