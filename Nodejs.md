@@ -67,3 +67,20 @@ Code NON BLOQUANT axé sur des listeners.
 var server = require('http');
 server.createServer().listen();
 ```
+------------
+
+# Modules
+
+**Les modules sont chargés en cache**  
+Avec un *require*, il est possible de charger le fichier index.js automatiquement en pointant seulement le dossier.
+
+```javascript
+// File ./exampleOne/index.js
+var example = require('./exampleOne/');
+```
+
+Le fichier package.json permet de configurer le fichier de base (pour changer de index js)
+
+```javascript
+{"main" : "main.js"}
+```
