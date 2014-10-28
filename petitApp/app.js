@@ -1,18 +1,17 @@
 var tableauReponse = require('tableauReponse');
 var util = require('util');
+var e = require('events').EventEmitter();
 
 // var txt = util.format('My string is %s et %s', 'Youpidou', 'Ta mère');
 // console.log(txt);
 
-var today = new Date();
-console.log(today.getYear());
-
 // console.dir(tableauReponse);
-// var stdin = process.openStdin();
+// console.log("entrez votre date d'anniversaire au format jj/mm/yyyy");
+var stdin = process.openStdin();
 
-// stdin.on('data', function(chunk){
-//     console.log("Got chunk : " + chunk);
-// });
+stdin.on('data', function(chunk){
+    console.log("Got chunk : " + chunk);
+});
 
 // console.log("Début");
 // console.time("bench");

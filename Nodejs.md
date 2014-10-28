@@ -42,11 +42,11 @@ Permet d'installer facilement des packages, framework pour NodeJs
 
 #NodeJs
 
-**Le javascript est mono threadé, un seul et unique coeur** 
+**Le javascript est mono threadé, un seul et unique coeur**
 
 Code NON BLOQUANT axé sur des listeners.
 
-# NODEJS 
+# NODEJS
 
 * JS côté serveur
 * Monothreadé
@@ -112,7 +112,7 @@ console.log(module)
 * Émetteur (Emitter)
 * Écoutants (Listener)
 
-Pour utiliser les evenements il faut faire un require de la library **events** 
+Pour utiliser les evenements il faut faire un require de la library **events**
 
 ```javascript
 var events = require('events');
@@ -131,3 +131,40 @@ objet1.setMaxListener(int); // Change le nombre de listener (10 par défaut)
 * http
 * util
 * events
+
+## Streams
+
+Types de stream
+ * Stream Read
+ * Stream Write
+ * Stream Duplex
+
+## FS
+
+File System -> Lire et écrire des fichiers
+
+### Flags
+ * 'r' -> ouverture d'un fichier en lecture seule, le fichier doit exister
+ * 'r+' -> lecture et écriture d'un fichier, le fichier doit exister
+ * 'w' -> ouverture du fichier en écriture seule, le fichier est créé si il n'existe pas, écraser si il existe
+ * 'w+' -> lecture et ecriture, le fichier est créé ou écrasé
+ * 'a' -> ouverture du fichier en mode ajout, créé si il existe pas et sinon il sera modifié
+ * 'a+' -> ouverture du fichier en lecture et en ajout, créé si il n'existe pas il est créé, sinon il est modifié
+
+```js
+var doc = fs.open('file', 'flag', callback);
+fs.close(doc, callback);
+```
+
+## TCP/UDP
+
+* TCP -> Transmission Control Protocol
+* UDP -> User Datagram Protocol
+
+TCP envoie en chaîne de manière chronologique
+
+UDP envoie tout de façon assez anarchique et aléatoire
+
+Les streams sont très importants, ce sont eux qui permettent l'échange de données.
+
+Un stream représente soit la lecture, soit l'écriture de données, soit les 2 (bidirectionnels).
