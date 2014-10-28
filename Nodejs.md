@@ -152,9 +152,22 @@ File System -> Lire et écrire des fichiers
  * 'a+' -> ouverture du fichier en lecture et en ajout, créé si il n'existe pas il est créé, sinon il est modifié
 
 ```js
-var doc = fs.open('file', 'flag', callback);
+var doc = fs.open('file', 'flag', callback(err, fileDescriptor));
 fs.close(doc, callback);
 ```
+
+#### Lecture complète
+
+* readFile(filename, [options], callback)
+* readFileSync(filename,)
+
+#### Lecture partielle
+
+* read(fileDescriptor, buffer, offsetBuffer, length, position, callback(err, bytesRead, data))
+* readSync(fileDescriptor, buffer, offsetBuffer, length, position)
+
+renvoie un buffer d'octet, utiliser toString() pour le convertir en string
+
 
 ## TCP/UDP
 
