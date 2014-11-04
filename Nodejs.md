@@ -130,6 +130,8 @@ objet1.setMaxListener(int); // Change le nombre de listener (10 par défaut)
 
 * http
 * util
+    * util.dir()
+    * util.inspect()
 * events
 
 ## Streams
@@ -181,3 +183,36 @@ UDP envoie tout de façon assez anarchique et aléatoire
 Les streams sont très importants, ce sont eux qui permettent l'échange de données.
 
 Un stream représente soit la lecture, soit l'écriture de données, soit les 2 (bidirectionnels).
+
+## HTTP
+
+* necessite le module http
+* permet de creer un serveur
+* instance de events qui est instance de stream en lecture
+
+`http.createServer(function(req, res) {}).listen(80);`
+
+C'est à partir de cette requête que l'on récupère les headers, la méthode http (GET, POST, PUT, DELETE); le status code (doit être absolument gérer par nous), il va falloir spécifié le Content-Type.
+
+* request -> class http.incomingMessage, stream readable, correspond aux arguments transmis par le client http, pour que le serveur puisse traiter cette même requête
+* response -> class http.serverResponse, stream writable, contient la réponse envoyée au client
+
+La construction de la réponse est majoritairement du HTML mais également du JSON. On y accède avec localhost:[portUtilisé], et quelque soit le port utiliser, la suite de la querystring n'a pas d'importance parce qu'on ne peut pas parser l'url directement (localhost:[portUtilisé]/toto).
+
+### Requete
+
+Quelques méthode de l'objet request. Si l'url est passé directement dans la barre d'url c'est du GET.
+
+* request.url
+* request.header
+* request.client (class net.socket, le client TCP qui va se connecter au serveur)
+
+### Response
+
+* response.write()
+* response.end() (ferme le stream en écriture)
+
+```javascript
+var index = fs.createReadStream('index.html');
+index.pipe(response); // ferme le stream par defaut, pas de réponse.end() donc
+```
